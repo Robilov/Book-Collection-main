@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KITOB.UZ</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">KITOB.UZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bosh sahifa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Kitoblar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mualliflar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Nashriyotlar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="intro">
+    <div class="container wrapper">
+      <h1>Kitoblar do`koni Admin paneli by Humoyun</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quia possimus laudantium quos vitae sunt dolor
+        eum
+        repellendus id reiciendis nobis, aliquid, inventore, labore voluptatibus eveniet odit repudiandae veniam harum
+        impedit veritatis quis. Quas, tenetur vel.</p>
+    </div>
+  </section>
+  <section class="content">
+    <div class="container">
+      <div class="content__wrapper">
+        <div class="row">
+
+
+          <div class="col col-12 col-md-6">
+            <h3>Yangi kitob qo`shish</h3>
+            <form class="form-add" action="https://echo.htmlacademy.ru">
+              <div class="row mb-3">
+                <div class="col col-12 col-lg-8">
+                  <label class="form-label" for="input-book-name-id">Kitob nomini kiriting</label>
+                  <input class="form-control input-name-js" type="text" id="input-book-name-id"
+                    aria-describedby="book-name-Help" required>
+                  <div class="form-text message-js" id="book-name-Help">Kitob nomini lotin yozuvida kiriting</div>
+                </div>
+                <div class="col col-12 col-lg-4">
+                  <label class="form-label" for="select-adabiyot">Adabiyot turi</label>
+                  <select class="form-select select-adabiyot-js" aria-label="Default select example"
+                    id="select-adabiyot">
+                    <option value="0" selected>Bolalar adabiyoti</option>
+                    <option value="1">Kattalar adabiyoti</option>
+                    <option value="2">Jahon adabiyoti</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input class="form-check-input check-js" type="checkbox" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Ro`yxatning boshiga qo`shish</label>
+              </div>
+              <button class="btn btn-primary" type="submit">Qo`shish</button>
+            </form>
+          </div>
+
+
+          <div class="col col-12 col-md-6 mt-3 mt-md-0">
+            <h3>Ro`yxatdan izlash</h3>
+            <form class="form-search" action="https://echo.htmlacademy.ru">
+              <div class="mb-3">
+                <label class="form-label" for="input-book-name-search-id">Kitob nomini kiriting</label>
+                <input class="form-control input-search-js" type="text" id="input-book-name-search-id"
+                  aria-describedby="book-search-Help" oninput="search()" autocomplete="off" required>
+                <div class="form-text" id="book-search-Help">Kitob nomini lotin yozuvida kiriting</div>
+              </div>
+              <output class="output-js">Yuqoridagi maydonga so`z kiriting</output>
+              <!-- <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+              <button class="btn btn-primary visually-hidden" type="submit">Izlash</button>
+            </form>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="list-wrapper">
+
+        <div class="row">
+          <div class="col col-12 col-md-6">
+            <h3>Kitoblar ro`yxati</h3>
+            <ul class="book-list">
+
+            </ul>
+            <button class="btn btn-danger mt-2 delete-btn" type="button" onclick="deleteItem()"
+              disabled>O`chirish</button>
+            <button class="btn btn-success mt-2 sort-btn" type="button" onclick="sortItem()">Alifbo bo`yicha
+              tartiblash</button>
+          </div>
+          <div class="col col-12 col-md-6 mt-3 mt-md-0">
+            <p class="js-long-title"></p>
+            <p class="js-short-title"></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h3>Bu footer</h3>
+    </div>
+  </footer>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./js/functions.js"></script>
+  <script src="js/my.js"></script>
+</body>
+
+</html>
